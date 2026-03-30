@@ -197,29 +197,33 @@ export default function App() {
     <div style={styles.container}>
       <h2 style={styles.title}>顧客管理</h2>
 
-      <div style={styles.toolbar}>
-        <input
-          placeholder="検索"
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-          style={styles.input}
-        />
+<div style={styles.toolbar}>
+  <div style={styles.toolbarItem}>
+    <input
+      placeholder="検索"
+      value={searchText}
+      onChange={(e) => setSearchText(e.target.value)}
+      style={styles.input}
+    />
+  </div>
 
-        <select
-          value={sortKey}
-          onChange={(e) => setSortKey(e.target.value)}
-          style={styles.select}
-        >
-          <option value="id_asc">No昇順</option>
-          <option value="id_desc">No降順</option>
-          <option value="name_asc">名前昇順</option>
-          <option value="name_desc">名前降順</option>
-          <option value="company_asc">会社名昇順</option>
-          <option value="company_desc">会社名降順</option>
-          <option value="email_asc">メール昇順</option>
-          <option value="email_desc">メール降順</option>
-        </select>
-      </div>
+  <div style={styles.toolbarItem}>
+    <select
+      value={sortKey}
+      onChange={(e) => setSortKey(e.target.value)}
+      style={styles.select}
+    >
+      <option value="id_asc">No昇順</option>
+      <option value="id_desc">No降順</option>
+      <option value="name_asc">名前昇順</option>
+      <option value="name_desc">名前降順</option>
+      <option value="company_asc">会社名昇順</option>
+      <option value="company_desc">会社名降順</option>
+      <option value="email_asc">メール昇順</option>
+      <option value="email_desc">メール降順</option>
+    </select>
+  </div>
+</div>
 
       <CustomerTable
         filtered={filtered}
