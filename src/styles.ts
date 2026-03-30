@@ -1,5 +1,6 @@
 export const styles = {
   container: {
+    width: "100%",
     maxWidth: "900px",
     margin: "40px auto",
     padding: "20px",
@@ -32,7 +33,7 @@ export const styles = {
 
   table: {
     width: "100%",
-    minWidth: "720px",
+    /*minWidth: "720px",*/
     borderCollapse: "collapse" as const,
   },
 
@@ -126,3 +127,4 @@ export const styles = {
     whiteSpace: "nowrap" as const,
   },
 };
+

@@ -30,6 +30,25 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* スマホ用 */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .toolbar {
+    flex-direction: column;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
