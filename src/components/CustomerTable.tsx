@@ -86,6 +86,7 @@ export function CustomerTable({
   };
 
   return (
+    <div style={styles.tableWrapper}>
     <table style={styles.table}>
       <thead>
         <tr>
@@ -180,5 +181,6 @@ export function CustomerTable({
         </tr>
       </tbody>
     </table>
+    </div>
   );
 }
