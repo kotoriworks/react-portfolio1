@@ -32,7 +32,7 @@ https://react-portfolio1-lime.vercel.app/
 * React（関数コンポーネント / Hooks）
 * TypeScript（型安全な設計）
 * Vite（開発環境）
-* CSS（インラインスタイル）
+* CSS（シンプルなスタイリングでUIを構築）
 
 ---
 
